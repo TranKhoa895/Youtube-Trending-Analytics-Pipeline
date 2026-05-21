@@ -1,0 +1,8 @@
+credentials.json
+gcp-key.json
+youtube_trending_20260521.json
+.env
+__pycache__/
+.pytest_cache/
+.venv/
+venv/
