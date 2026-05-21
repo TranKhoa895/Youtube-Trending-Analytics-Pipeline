@@ -37,7 +37,7 @@ The final report provides multi-dimensional insights:
 ---
 
 ## How To Run This Project
-1. Clone the repository: `git clone https://github.com/TranKhoa895/youtube-trending-pipeline.git`
+1. Clone the repository: `git clone https://github.com/TranKhoa895/Youtube-Trending-Analytics-Pipeline.git`
 2. Install dependencies: `pip install -r requirements.txt`
 3. Setup Google Cloud Credentials (`credentials.json`).
 4. Run the Python extraction script: `python main.py`
