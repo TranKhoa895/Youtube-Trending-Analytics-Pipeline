@@ -9,7 +9,7 @@ This project builds an End-to-End Data Pipeline to automate the collection, stor
 
 ## System Architecture
 The data pipeline is designed with a modern Cloud Data Stack:
-Python (Scraper/API) ➔ Google BigQuery (Data Warehouse) ➔ Data Studio (BI Dashboard)
+Python (Scraper/API) ➔ Google BigQuery (Data Warehouse) ➔ Looker Studio (BI Dashboard)
 
 1. **Data Ingestion:** A Python script automates fetching daily trending video metrics (Views, Likes, Comments, Titles, Channels) via the YouTube API.
 2. **Data Warehouse:** Raw data is loaded into Google BigQuery to handle large-scale datasets efficiently.
@@ -23,7 +23,7 @@ Python (Scraper/API) ➔ Google BigQuery (Data Warehouse) ➔ Data Studio (BI Da
 The final report provides multi-dimensional insights:
 * **Overview Analytics:** Real-time tracking of Total Views, Total Likes, and Total Comments.
 * **Top 10 Most Viewed Videos:** Leaderboard utilizing a Visual Table with Bars to handle long video titles without UI clutter.
-* **Top Channels on Trending:** A chart analyzing appearance frequency (Record Count) instead of raw views to measure long-term performance and brand consistency.
+* **Top Channels on Trending:** Evaluates channel performance using accumulated `view_count` instead of frequency, highlighting channels with the highest viewership engagement.
 * **Detailed Data Registry:** A granular lookup table supporting full pagination and text wrapping for end-users.
 
 ---
@@ -32,7 +32,7 @@ The final report provides multi-dimensional insights:
 * **Language:** Python (pandas, google-cloud-bigquery)
 * **Cloud Platform:** Google Cloud Platform (GCP)
 * **Data Warehouse:** Google BigQuery (SQL)
-* **Business Intelligence (BI):** Data Studio
+* **Business Intelligence (BI):** Looker Studio
 
 ---
 
